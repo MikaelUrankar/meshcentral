@@ -1,0 +1,121 @@
+Installing archiver@4.0.2...
+Installing otplib@10.2.3...
+MeshCentral HTTP redirection server running on port 80.
+Generating certificates, may take a few minutes...
+Generating root certificate...
+Generating HTTPS certificate...
+Generating MeshAgent certificate...
+Generating Intel AMT MPS certificate...
+MeshCentral v0.8.26, LAN mode.
+Server has no users, next new account will be site administrator.
+MeshCentral HTTPS server running on port 443.
+
+# modules supplémentaires suivant les options
+npm install archiver@4.0.2 --save
+
+ws
+cbor@5.2.0'
+nedb
+https
+yauzl
+xmldom
+ipcheck
+express
+archiver@4.0.2
+multiparty
+node-forge
+express-ws
+compression
+body-parser
+cookie-session
+express-handlebars
+ldapauth-fork
+node-rdpjs-2
+ssh2
+passport
+image-size
+acme-client
+aedes@0.39.0
+mysql
+mongodb
+mariadb
+node-vault
+semver
+https-proxy-agent
+mongojs
+nodemailer
+@sendgrid/mail
+jsdom
+esprima
+minify-js
+html-minifier
+archiver-zip-encrypted
+webdav
+wildleek@2.0.0
+yubikeyotp
+otplib@10.2.3
+image-size
+twilio
+plivo
+web-push
+node-xcs
+modern-syslog
+heapdump
+
+grep modules.push /usr/local/meshcentral/node_modules/meshcentral/meshcentral.js
+
+// Build the list of required modules
+        var modules = ['ws', 'cbor@5.2.0', 'nedb', 'https', 'yauzl', 'xmldom', 'ipcheck', 'express', 'archiver@4.0.2', 'multiparty', 'node-forge', 'express-ws', 'compression', 'body-parser', 'cookie-session', 'express-handlebars'];
+	
+
+        if (ldap == true) { modules.push('ldapauth-fork'); }
+        if (mstsc == true) { modules.push('node-rdpjs-2'); }
+        if (ssh == true) { modules.push('ssh2'); }
+        if (passport != null) { modules.push(...passport); }
+        if (sessionRecording == true) { modules.push('image-size'); } // Need to get the remote desktop JPEG sizes to index the recodring file.
+        if (config.letsencrypt != null) { modules.push('acme-client'); } } // Add acme-client module
+        if (config.settings.mqtt != null) { modules.push('aedes@0.39.0'); } // Add MQTT Modules
+        if (config.settings.mysql != null) { modules.push('mysql'); } // Add MySQL.
+        if (config.settings.mongodb != null) { modules.push('mongodb'); modules.push('saslprep'); } // Add MongoDB, official driver.
+        if (config.settings.mariadb != null) { modules.push('mariadb'); } // Add MariaDB, official driver.
+        if (config.settings.vault != null) { modules.push('node-vault'); } // Add official HashiCorp's Vault module.
+        if (config.settings.plugins != null) {  modules.push('semver'); } // Required for version compat testing and update checks
+        if ((config.settings.plugins != null) && (config.settings.plugins.proxy != null)) { modules.push('https-proxy-agent'); } // Required for HTTP/HTTPS proxy support
+        else if (config.settings.xmongodb != null) { modules.push('mongojs'); } // Add MongoJS, old driver.
+        if (nodemailer || (config.smtp != null)) { modules.push('nodemailer'); } // Add SMTP support
+        if (sendgrid || (config.sendgrid != null)) { modules.push('@sendgrid/mail'); } // Add SendGrid support
+        if (args.translate) { modules.push('jsdom'); modules.push('esprima'); modules.push('minify-js'); modules.push('html-minifier'); } // Translation support
+
+        // Setup encrypted zip support if needed
+        if (config.settings.autobackup && config.settings.autobackup.zippassword) {
+            modules.push('archiver-zip-encrypted');
+
+        // Enable WebDAV Support
+	modules.push('webdav');
+
+	// Setup common password blocking
+        if (wildleek == true) { modules.push('wildleek@2.0.0'); }
+
+	// Setup 2nd factor authentication
+            if (yubikey == true) { modules.push('yubikeyotp'); } // Add YubiKey OTP support
+            if (allsspi == false) { modules.push('otplib@10.2.3'); } // Google Authenticator support (v10 supports older NodeJS versions).
+
+	// Desktop multiplexor support
+        if (config.settings.desktopmultiplex === true) { modules.push('image-size'); }
+
+	// SMS support
+	modules.push('twilio')
+	modules.push('plivo')
+
+	// Setup web based push notifications
+        if ((typeof config.settings.webpush == 'object') && (typeof config.settings.webpush.email == 'string')) { modules.push('web-push'); }
+
+	// Firebase Support
+	modules.push('node-xcs');
+
+	// Syslog support
+	modules.push('modern-syslog');
+
+	// Setup heapdump support if needed, useful for memory leak debugging
+        // https://www.arbazsiddiqui.me/a-practical-guide-to-memory-leaks-in-nodejs/
+        if (config.settings.heapdump === true) { modules.push('heapdump'); }
