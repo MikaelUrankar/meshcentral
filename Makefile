@@ -5,7 +5,7 @@ MASTER_SITES=	http://mikael.urankar.free.fr/MeshCentral/:npm_cache
 DISTFILES=	meshcentral-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
 
 MAINTAINER=	mikael@FreeBSD.org
-COMMENT=	full computer management web site
+COMMENT=	Full computer management web site
 
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
@@ -17,6 +17,8 @@ USE_GITHUB=	yes
 GH_ACCOUNT=	Ylianst
 GH_TAGNAME=	ed6dcb96dbc79b6ac06e4a250c2680690cf52ff1
 
+USERS=		meshcentral
+GROUPS=		meshcentral
 USE_RC_SUBR=	meshcentral
 
 # meshcentral node_modules directory:
@@ -53,5 +55,9 @@ do-install:
 
 	${MKDIR} ${STAGEDIR}${PREFIX}/meshcentral/node_modules/meshcentral
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${PREFIX}/meshcentral/node_modules/meshcentral)
+
+	${RM} \
+		${STAGEDIR}${PREFIX}/meshcentral/node_modules/readdirp/node_modules/extglob/lib/.DS_Store \
+		${STAGEDIR}${PREFIX}/meshcentral/node_modules/readdirp/node_modules/micromatch/lib/.DS_Store
 
 .include <bsd.port.mk>

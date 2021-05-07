@@ -14888,7 +14888,6 @@ meshcentral/node_modules/readdirp/node_modules/extglob/LICENSE
 meshcentral/node_modules/readdirp/node_modules/extglob/README.md
 meshcentral/node_modules/readdirp/node_modules/extglob/changelog.md
 meshcentral/node_modules/readdirp/node_modules/extglob/index.js
-meshcentral/node_modules/readdirp/node_modules/extglob/lib/.DS_Store
 meshcentral/node_modules/readdirp/node_modules/extglob/lib/compilers.js
 meshcentral/node_modules/readdirp/node_modules/extglob/lib/extglob.js
 meshcentral/node_modules/readdirp/node_modules/extglob/lib/parsers.js
@@ -14944,7 +14943,6 @@ meshcentral/node_modules/readdirp/node_modules/micromatch/CHANGELOG.md
 meshcentral/node_modules/readdirp/node_modules/micromatch/LICENSE
 meshcentral/node_modules/readdirp/node_modules/micromatch/README.md
 meshcentral/node_modules/readdirp/node_modules/micromatch/index.js
-meshcentral/node_modules/readdirp/node_modules/micromatch/lib/.DS_Store
 meshcentral/node_modules/readdirp/node_modules/micromatch/lib/cache.js
 meshcentral/node_modules/readdirp/node_modules/micromatch/lib/compilers.js
 meshcentral/node_modules/readdirp/node_modules/micromatch/lib/parsers.js
@@ -18683,3 +18681,8 @@ meshcentral/node_modules/zip-stream/LICENSE
 meshcentral/node_modules/zip-stream/README.md
 meshcentral/node_modules/zip-stream/index.js
 meshcentral/node_modules/zip-stream/package.json
+@owner meshcentral
+@group meshcentral
+@dir meshcentral
+@owner
+@group
