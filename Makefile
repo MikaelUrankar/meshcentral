@@ -1,6 +1,7 @@
+# bump GH_TAGNAME and PORTVERSION to update the port
 PORTNAME=	MeshCentral
-PORTVERSION=	0.8.26
-CATEGORIES=	security
+PORTVERSION=	0.9.33
+CATEGORIES=	net
 MASTER_SITES=	http://mikael.urankar.free.fr/MeshCentral/:npm_cache
 DISTFILES=	meshcentral-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
 
@@ -15,7 +16,7 @@ RUN_DEPENDS=	node>0:www/node
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ylianst
-GH_TAGNAME=	ed6dcb96dbc79b6ac06e4a250c2680690cf52ff1
+GH_TAGNAME=	555641b35ca86127032178385e79a21971b2c2f1
 
 USERS=		meshcentral
 GROUPS=		meshcentral
@@ -25,13 +26,11 @@ USE_RC_SUBR=	meshcentral
 MC=	${WRKDIR}/mc
 
 # Helper targets for port maintainers
-# Make sure the package*json are up to date
-# Don't forget to add the missing modules, grep modules.push meshcentral.js
-# Don't forget to copy package.json and package-lock.json in ${FILESDIR}/packagejsons
-# do "make configure" before executing this target
+# See doc.txt for instructions
 make-npm-cache:
 	${CP} ${FILESDIR}/packagejsons/package*.json ${WRKSRC}
 	cd ${WRKDIR} && ${RM} -r .npm
+	cd ${WRKSRC} && ${RM} -r node_modules
 	cd ${WRKSRC} && \
 		${SETENV} HOME=${WRKDIR} npm install --ignore-scripts
 	cd ${WRKDIR}/.npm && \

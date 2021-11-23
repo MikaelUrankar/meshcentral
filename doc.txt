@@ -1,0 +1,28 @@
+Updating the port:
+
+# Bump GH_TAGNAME and PORTVERSION
+# Temporarily comment MASTER_SITES and DISTFILES
+make makesum
+
+# Extract Ylianst-MeshCentral-0.X.XX-xxx_GH0.tar.gz
+#    and put package.json in ${FILESDIR}/packagejsons
+cd /usr/ports/distfiles ; tar xf Ylianst-MeshCentral-*
+
+cp /usr/local/poudriere/ports/meshcentral/net/meshcentral/grep_modules.sh MeshCentral-*/
+cd MeshCentral-*/
+sh grep_modules.sh
+# Update add_missing_dep.sh with the content of the previous command
+
+cd /usr/local/poudriere/ports/meshcentral/net/meshcentral/
+make configure
+cd work/MeshCentral* ; sh /usr/local/poudriere/ports/meshcentral/net/meshcentral/add_missing_dep.sh
+cp package.json package-lock.json /usr/local/poudriere/ports/meshcentral/net/meshcentral/files/packagejsons/
+cd /usr/local/poudriere/ports/meshcentral/net/meshcentral/
+make make-npm-cache
+
+# Upload work/meshcentral-npm-cache-0.9.33.tar.gz somewhere
+# Uncomment GH_TAGNAME PORTVERSION
+make makesum
+
+poudriere testport -j 14amd64 net/meshcentral
+
