@@ -57,7 +57,6 @@ meshcentral/node_modules/.bin/web-push
 meshcentral/node_modules/.bin/which
 meshcentral/node_modules/.bin/window-size
 meshcentral/node_modules/.bin/xml2js
-meshcentral/node_modules/.package-lock.json
 meshcentral/node_modules/@alloc/quick-lru/index.d.ts
 meshcentral/node_modules/@alloc/quick-lru/index.js
 meshcentral/node_modules/@alloc/quick-lru/license
