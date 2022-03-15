@@ -27,6 +27,8 @@ mysql
 @mysql/xdevapi
 mongodb@4.1.0
 saslprep
+pg@8.7.1
+pgtools@0.3.2
 mariadb
 node-vault
 semver
@@ -47,6 +49,7 @@ otplib@10.2.3
 image-size
 twilio
 plivo
+telnyx
 web-push
 node-xcs
 modern-syslog

@@ -20,7 +20,7 @@ cp package.json package-lock.json /usr/local/poudriere/ports/meshcentral/net/mes
 cd /usr/local/poudriere/ports/meshcentral/net/meshcentral/
 make make-npm-cache
 
-# Upload work/meshcentral-npm-cache-0.9.33.tar.gz somewhere
+# Upload work/meshcentral-0.9.33-npm-cache.tar.gz somewhere
 # Uncomment GH_TAGNAME PORTVERSION
 make makesum
 

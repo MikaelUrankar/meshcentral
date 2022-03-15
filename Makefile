@@ -1,9 +1,9 @@
 # bump GH_TAGNAME and PORTVERSION to update the port
 PORTNAME=	MeshCentral
-PORTVERSION=	0.9.33
+PORTVERSION=	0.9.98
 CATEGORIES=	net
 MASTER_SITES=	http://mikael.urankar.free.fr/MeshCentral/:npm_cache
-DISTFILES=	meshcentral-npm-cache-${DISTVERSION}${EXTRACT_SUFX}:npm_cache
+DISTFILES=	meshcentral-${DISTVERSION}-npm-cache${EXTRACT_SUFX}:npm_cache
 
 MAINTAINER=	mikael@FreeBSD.org
 COMMENT=	Full computer management web site
@@ -11,12 +11,12 @@ COMMENT=	Full computer management web site
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	npm>0:www/npm
-RUN_DEPENDS=	node>0:www/node
+BUILD_DEPENDS=	npm:www/npm-node16
+RUN_DEPENDS=	node:www/node16
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ylianst
-GH_TAGNAME=	555641b35ca86127032178385e79a21971b2c2f1
+GH_TAGNAME=	91e497573fd61062ee2cb741837576173a24d350
 
 USERS=		meshcentral
 GROUPS=		meshcentral
@@ -36,7 +36,7 @@ make-npm-cache:
 	cd ${WRKDIR}/.npm && \
 		${RM} -r _locks anonymous-cli-metrics.json
 	cd ${WRKDIR} && \
-		${TAR} -czf meshcentral-npm-cache-${DISTVERSION}${EXTRACT_SUFX} .npm
+		${TAR} -czf meshcentral-${DISTVERSION}-npm-cache${EXTRACT_SUFX} .npm
 
 do-configure:
 	${MKDIR} ${MC}
