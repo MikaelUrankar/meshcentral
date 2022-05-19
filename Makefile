@@ -1,6 +1,6 @@
 # bump GH_TAGNAME and PORTVERSION to update the port
 PORTNAME=	MeshCentral
-PORTVERSION=	0.9.98
+PORTVERSION=	1.0.24
 CATEGORIES=	net
 MASTER_SITES=	http://mikael.urankar.free.fr/MeshCentral/:npm_cache
 DISTFILES=	meshcentral-${DISTVERSION}-npm-cache${EXTRACT_SUFX}:npm_cache
@@ -16,10 +16,10 @@ RUN_DEPENDS=	node:www/node16
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ylianst
-GH_TAGNAME=	91e497573fd61062ee2cb741837576173a24d350
+GH_TAGNAME=	e9cff979052a7c5996220dbf14d268d817deef9a
 
-USERS=		meshcentral
-GROUPS=		meshcentral
+#USERS=		meshcentral
+#GROUPS=		meshcentral
 USE_RC_SUBR=	meshcentral
 
 # meshcentral node_modules directory:

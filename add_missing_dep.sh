@@ -6,7 +6,7 @@ https
 yauzl
 ipcheck
 express
-archiver@4.0.2
+archiver@5.3.1
 multiparty
 node-forge
 express-ws@4.0.0
@@ -18,7 +18,6 @@ node-windows@0.1.4
 loadavg-windows
 node-sspi
 ldapauth-fork
-node-rdpjs-2
 ssh2
 image-size
 acme-client

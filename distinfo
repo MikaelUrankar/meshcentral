@@ -1,5 +1,5 @@
-TIMESTAMP = 1647354127
-SHA256 (meshcentral-0.9.98-npm-cache.tar.gz) = 86a846079672e8336623ba3ac5e9ab8dbc68395b709e9387022367605d8fead5
-SIZE (meshcentral-0.9.98-npm-cache.tar.gz) = 38654429
-SHA256 (Ylianst-MeshCentral-0.9.98-91e497573fd61062ee2cb741837576173a24d350_GH0.tar.gz) = 7e652822ec498524a564353b3f3784b32ec84723f9a8f9bacad28db17230ee2b
-SIZE (Ylianst-MeshCentral-0.9.98-91e497573fd61062ee2cb741837576173a24d350_GH0.tar.gz) = 104981504
+TIMESTAMP = 1652947747
+SHA256 (meshcentral-1.0.24-npm-cache.tar.gz) = 8f883be496fd6065d7ca3b22cb300c5a9067cdabbab2d1534330806172505174
+SIZE (meshcentral-1.0.24-npm-cache.tar.gz) = 38791493
+SHA256 (Ylianst-MeshCentral-1.0.24-e9cff979052a7c5996220dbf14d268d817deef9a_GH0.tar.gz) = 90572c6e11d8c55b131732a3e02c1b8fee064a2378dd66cb5e1e85da0e3c4929
+SIZE (Ylianst-MeshCentral-1.0.24-e9cff979052a7c5996220dbf14d268d817deef9a_GH0.tar.gz) = 121892900
