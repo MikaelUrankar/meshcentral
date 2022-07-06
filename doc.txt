@@ -4,18 +4,14 @@ Updating the port:
 # Temporarily comment MASTER_SITES and DISTFILES
 make makesum
 
-# Extract Ylianst-MeshCentral-0.X.XX-xxx_GH0.tar.gz
-#    and put package.json in ${FILESDIR}/packagejsons
-cd /usr/ports/distfiles ; tar xf Ylianst-MeshCentral-*
-
-cp net/meshcentral/grep_modules.sh MeshCentral-*/
-cd MeshCentral-*/
-sh grep_modules.sh
-# Update add_missing_dep.sh with the content of the previous command
-
-cd net/meshcentral
 make configure
-cd work/MeshCentral* ; sh net/meshcentral/add_missing_dep.sh
+
+cp add_missing_dep.sh grep_modules.sh work/MeshCentral-XXX
+cd work/MeshCentral-XXX
+sh grep_modules.sh
+# Update / save add_missing_dep.sh with the content of the previous command
+
+sh add_missing_dep.sh
 cp package.json package-lock.json net/meshcentral/files/packagejsons
 cd net/meshcentral
 make make-npm-cache
