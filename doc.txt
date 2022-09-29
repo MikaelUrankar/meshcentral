@@ -11,10 +11,10 @@ cd work/MeshCentral-XXX
 sh grep_modules.sh
 # Update / save add_missing_dep.sh with the content of the previous command
 
-sh add_missing_dep.sh
+env HOME=net/meshcentral/work sh add_missing_dep.sh
 cp package.json package-lock.json net/meshcentral/files/packagejsons
 cd net/meshcentral
-make make-npm-cache
+make create-caches-tarball
 
 # Upload work/meshcentral-0.9.33-npm-cache.tar.gz somewhere
 # Uncomment MASTER_SITES and DISTFILES
