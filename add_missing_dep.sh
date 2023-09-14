@@ -19,16 +19,19 @@ loadavg-windows
 node-sspi
 ldapauth-fork
 ssh2
+svg-captcha
 image-size
-acme-client
+acme-client@4.2.5
 aedes@0.39.0
 mysql
 @mysql/xdevapi
-mongodb@4.1.0
+mongodb@4.9.1
 saslprep
 pg@8.7.1
 pgtools@0.3.2
 mariadb
+acebase
+sqlite3
 node-vault
 semver
 https-proxy-agent
@@ -39,6 +42,7 @@ jsdom
 esprima
 minify-js
 html-minifier
+@crowdsec/express-bouncer
 archiver-zip-encrypted
 googleapis
 webdav
@@ -57,6 +61,6 @@ heapdump"
 
 for mod in ${modules}
 do
-	npm install ${mod} --save
+	env HOME=/home/urankami/freebsd_ports/FreeBSD-ports/meshcentral/net/meshcentral/work npm install ${mod} --save
 done
 

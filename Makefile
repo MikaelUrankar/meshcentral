@@ -1,11 +1,11 @@
 # Ajout user meshcentral dans UIDs/GIDs
 # meshcentral:*:1003:1003::0:0:meshcentral pseudo user:/nonexistent:/usr/sbin/nologin
-# meshcentral:*:1002:
+# meshcentral:*:1003:
 
 # See doc.txt for updating instructions
 
 PORTNAME=	MeshCentral
-PORTVERSION=	1.0.85
+PORTVERSION=	1.1.11
 CATEGORIES=	net
 MASTER_SITES=	http://mikael.urankar.free.fr/MeshCentral/:npm_cache
 DISTFILES=	${PORTNAME}-${DISTVERSION}-npm-cache${EXTRACT_SUFX}:npm_cache
@@ -16,8 +16,8 @@ COMMENT=	Full computer management web site
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/LICENSE
 
-BUILD_DEPENDS=	npm:www/npm-node16
-RUN_DEPENDS=	node:www/node16
+BUILD_DEPENDS=	npm:www/npm-node18
+RUN_DEPENDS=	node:www/node18
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	Ylianst

@@ -3878,6 +3878,7 @@ meshcentral/node_modules/@babel/types/lib/comments/removeComments.js.map
 meshcentral/node_modules/@babel/types/lib/constants/generated/index.js
 meshcentral/node_modules/@babel/types/lib/constants/generated/index.js.map
 meshcentral/node_modules/@babel/types/lib/constants/index.js
+meshcentral/node_modules/@babel/types/lib/constants/index.js.map
 meshcentral/node_modules/@babel/types/lib/converters/ensureBlock.js
 meshcentral/node_modules/@babel/types/lib/converters/ensureBlock.js.map
 meshcentral/node_modules/@babel/types/lib/converters/gatherSequenceExpressions.js
@@ -4171,7 +4172,6 @@ meshcentral/node_modules/@mapbox/node-pre-gyp/lib/util/nw-pre-gyp/package.json
 meshcentral/node_modules/@mapbox/node-pre-gyp/lib/util/s3_setup.js
 meshcentral/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js
 meshcentral/node_modules/@mapbox/node-pre-gyp/package.json
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/@mysql/xdevapi/CHANGES.txt
 meshcentral/node_modules/@mysql/xdevapi/CONTRIBUTING.md
 meshcentral/node_modules/@mysql/xdevapi/LICENSE
@@ -12201,6 +12201,21 @@ meshcentral/node_modules/entities/lib/index.js
 meshcentral/node_modules/entities/lib/index.js.map
 meshcentral/node_modules/entities/package.json
 meshcentral/node_modules/entities/readme.md
+meshcentral/node_modules/env-paths/index.d.ts
+meshcentral/node_modules/env-paths/index.js
+meshcentral/node_modules/env-paths/license
+meshcentral/node_modules/env-paths/package.json
+meshcentral/node_modules/env-paths/readme.md
+meshcentral/node_modules/err-code/.editorconfig
+meshcentral/node_modules/err-code/.eslintrc.json
+meshcentral/node_modules/err-code/.travis.yml
+meshcentral/node_modules/err-code/README.md
+meshcentral/node_modules/err-code/bower.json
+meshcentral/node_modules/err-code/index.js
+meshcentral/node_modules/err-code/index.umd.js
+meshcentral/node_modules/err-code/package.json
+meshcentral/node_modules/err-code/test/.eslintrc.json
+meshcentral/node_modules/err-code/test/test.js
 meshcentral/node_modules/error-ex/LICENSE
 meshcentral/node_modules/error-ex/README.md
 meshcentral/node_modules/error-ex/index.js
@@ -14525,27 +14540,6 @@ meshcentral/node_modules/googleapis-common/build/src/isbrowser.js
 meshcentral/node_modules/googleapis-common/build/src/schema.d.ts
 meshcentral/node_modules/googleapis-common/build/src/schema.js
 meshcentral/node_modules/googleapis-common/node_modules/.bin/uuid
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/CHANGELOG.md
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/LICENSE
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/README.md
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/common.d.ts
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/common.js
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/common.js.map
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/gaxios.d.ts
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/gaxios.js
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/gaxios.js.map
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/index.d.ts
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/index.js
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/index.js.map
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/retry.d.ts
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/retry.js
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/build/src/retry.js.map
-meshcentral/node_modules/googleapis-common/node_modules/gaxios/package.json
-meshcentral/node_modules/googleapis-common/node_modules/is-stream/index.d.ts
-meshcentral/node_modules/googleapis-common/node_modules/is-stream/index.js
-meshcentral/node_modules/googleapis-common/node_modules/is-stream/license
-meshcentral/node_modules/googleapis-common/node_modules/is-stream/package.json
-meshcentral/node_modules/googleapis-common/node_modules/is-stream/readme.md
 meshcentral/node_modules/googleapis-common/node_modules/uuid/CHANGELOG.md
 meshcentral/node_modules/googleapis-common/node_modules/uuid/CONTRIBUTING.md
 meshcentral/node_modules/googleapis-common/node_modules/uuid/LICENSE.md
@@ -14706,11 +14700,8 @@ meshcentral/node_modules/googleapis/build/src/apis/analyticsdata/v1beta.d.ts
 meshcentral/node_modules/googleapis/build/src/apis/analyticsdata/v1beta.js
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/index.d.ts
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/index.js
-<<<<<<< HEAD
-=======
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/v1.d.ts
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/v1.js
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/v1beta1.d.ts
 meshcentral/node_modules/googleapis/build/src/apis/analyticshub/v1beta1.js
 meshcentral/node_modules/googleapis/build/src/apis/analyticsreporting/index.d.ts
@@ -16178,27 +16169,6 @@ meshcentral/node_modules/gtoken/LICENSE
 meshcentral/node_modules/gtoken/README.md
 meshcentral/node_modules/gtoken/build/src/index.d.ts
 meshcentral/node_modules/gtoken/build/src/index.js
-meshcentral/node_modules/gtoken/node_modules/gaxios/CHANGELOG.md
-meshcentral/node_modules/gtoken/node_modules/gaxios/LICENSE
-meshcentral/node_modules/gtoken/node_modules/gaxios/README.md
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/common.d.ts
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/common.js
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/common.js.map
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/gaxios.d.ts
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/gaxios.js
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/gaxios.js.map
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/index.d.ts
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/index.js
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/index.js.map
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/retry.d.ts
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/retry.js
-meshcentral/node_modules/gtoken/node_modules/gaxios/build/src/retry.js.map
-meshcentral/node_modules/gtoken/node_modules/gaxios/package.json
-meshcentral/node_modules/gtoken/node_modules/is-stream/index.d.ts
-meshcentral/node_modules/gtoken/node_modules/is-stream/index.js
-meshcentral/node_modules/gtoken/node_modules/is-stream/license
-meshcentral/node_modules/gtoken/node_modules/is-stream/package.json
-meshcentral/node_modules/gtoken/node_modules/is-stream/readme.md
 meshcentral/node_modules/gtoken/package.json
 meshcentral/node_modules/handlebars-array/.npmignore
 meshcentral/node_modules/handlebars-array/LICENSE
@@ -20363,15 +20333,6 @@ meshcentral/node_modules/mariadb/node_modules/@types/node/vm.d.ts
 meshcentral/node_modules/mariadb/node_modules/@types/node/wasi.d.ts
 meshcentral/node_modules/mariadb/node_modules/@types/node/worker_threads.d.ts
 meshcentral/node_modules/mariadb/node_modules/@types/node/zlib.d.ts
-<<<<<<< HEAD
-meshcentral/node_modules/mariadb/node_modules/denque/CHANGELOG.md
-meshcentral/node_modules/mariadb/node_modules/denque/LICENSE
-meshcentral/node_modules/mariadb/node_modules/denque/README.md
-meshcentral/node_modules/mariadb/node_modules/denque/index.d.ts
-meshcentral/node_modules/mariadb/node_modules/denque/index.js
-meshcentral/node_modules/mariadb/node_modules/denque/package.json
-=======
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/mariadb/node_modules/iconv-lite/.github/dependabot.yml
 meshcentral/node_modules/mariadb/node_modules/iconv-lite/.idea/codeStyles/Project.xml
 meshcentral/node_modules/mariadb/node_modules/iconv-lite/.idea/codeStyles/codeStyleConfig.xml
@@ -20467,12 +20428,6 @@ meshcentral/node_modules/merge-source-map/README.md
 meshcentral/node_modules/merge-source-map/index.js
 meshcentral/node_modules/merge-source-map/package.json
 meshcentral/node_modules/meshcentral/.dockerignore
-<<<<<<< HEAD
-meshcentral/node_modules/meshcentral/.github/ISSUE_TEMPLATE/bug_report.md
-meshcentral/node_modules/meshcentral/.github/ISSUE_TEMPLATE/feature_request.md
-meshcentral/node_modules/meshcentral/.github/workflows/codeql-analysis.yml
-meshcentral/node_modules/meshcentral/.github/workflows/deploy-docs.yml
-=======
 meshcentral/node_modules/meshcentral/.gitattributes
 meshcentral/node_modules/meshcentral/.github/ISSUE_TEMPLATE/bug_report.md
 meshcentral/node_modules/meshcentral/.github/ISSUE_TEMPLATE/config.yml
@@ -20481,7 +20436,6 @@ meshcentral/node_modules/meshcentral/.github/ISSUE_TEMPLATE/question.md
 meshcentral/node_modules/meshcentral/.github/workflows/codeql-analysis.yml
 meshcentral/node_modules/meshcentral/.github/workflows/deploy-docs.yml
 meshcentral/node_modules/meshcentral/.github/workflows/docker.yml
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/meshcentral/.github/workflows/release.yml
 meshcentral/node_modules/meshcentral/.gitignore
 meshcentral/node_modules/meshcentral/.npmrc
@@ -20595,11 +20549,8 @@ meshcentral/node_modules/meshcentral/amtscanner.js
 meshcentral/node_modules/meshcentral/amtscript.js
 meshcentral/node_modules/meshcentral/apprelays.js
 meshcentral/node_modules/meshcentral/authenticode.js
-<<<<<<< HEAD
-=======
 meshcentral/node_modules/meshcentral/bin/Microsoft.NodejsTools.WebRole.dll
 meshcentral/node_modules/meshcentral/bin/meshcentral
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/meshcentral/certoperations.js
 meshcentral/node_modules/meshcentral/common.js
 meshcentral/node_modules/meshcentral/crowdsec.js
@@ -20780,16 +20731,6 @@ meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-06-17-15-
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-06-17-15-57-30.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-06-17-15-57-52.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-07-02-06-27-36.png
-<<<<<<< HEAD
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/7daypowerstate.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/assistant_agent_code.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/assistant_invitation_link.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/desktop_connectbutton.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/desktop_rdpconnectbutton.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/details_cpuram.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/determine-id.png
-meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/general_alternateports.png
-=======
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-08-24-06-42-40.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/2022-09-06-16-38-57.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/7daypowerstate.png
@@ -20810,16 +20751,12 @@ meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/determine-id.p
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/general_alternateports.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/ldap_integration.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/rate_limiting_logins.png
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/terminal_connectbutton.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/user_tokens1.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/images/user_tokens2.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/index.md
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/plugins.md
-<<<<<<< HEAD
-=======
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/security.md
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/meshcentral/docs/docs/meshcentral/tokens.md
 meshcentral/node_modules/meshcentral/docs/docs/meshcmd/images/2022-05-15-15-11-39.png
 meshcentral/node_modules/meshcentral/docs/docs/meshcmd/images/2022-05-15-15-21-12.png
@@ -20931,8 +20868,6 @@ meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0070 - Intel
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0075 - Intel AMT MEI and LMS.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0077 - History of Intel AMT.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0078 - Intel AMT Activation.pptx
-<<<<<<< HEAD
-=======
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0078 - Web Relay.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0079 - Intel AMT Activation.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0080 - Web Relay with DNS.pptx
@@ -20944,7 +20879,6 @@ meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0087 - AceBa
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0088 - SQLite Database.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0091 - SessionKey.pptx
 meshcentral/node_modules/meshcentral/docs/powerpoints/MeshCentral - 0092 - Agent Ping and Browser Pong.pptx
->>>>>>> 5c256ce (net/meshcentral: Update to 1.0.85)
 meshcentral/node_modules/meshcentral/docs/powerpoints/README.md
 meshcentral/node_modules/meshcentral/docs/startdevmkdocsonwindows.ps1
 meshcentral/node_modules/meshcentral/emails/account-check.html

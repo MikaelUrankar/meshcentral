@@ -11,7 +11,8 @@ cd work/MeshCentral-XXX
 sh grep_modules.sh
 # Update / save add_missing_dep.sh with the content of the previous command
 
-env HOME=net/meshcentral/work sh add_missing_dep.sh
+# env HOME=net/meshcentral/work sh add_missing_dep.sh
+sh add_missing_dep.sh
 cp package.json package-lock.json net/meshcentral/files/packagejsons
 cd net/meshcentral
 make create-caches-tarball
